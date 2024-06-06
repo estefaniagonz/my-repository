@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piedra, Papel, Tijera</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="icon" type="image/x-icon" href="assets/juego-de-mesa.png" />
+  </head>
+  <body>
+    <div id="startGame">
+      <h1>Piedra Papel y Tijera</h1>
+      <div>
+        <p id="eligir_opción">Elige una opción para iniciar</p>
+      </div>
+      <hr />
+      <p id="gameResult"></p>
+      <p id="resultadoUsuario"></p>
+      <p id="resultadoCpu"></p>
+    </div>
+    <div id="text">
+      <p>Usuario</p>
+    </div>
+    <div id="containerGame">
+      <section id="gameUser">
+        <button id="rock" class="cargar" data-choice="Piedra">
+          <img
+            src="assets/✨piedra✨ _ 빈티지 디즈니, 웃긴 바탕화면, 곰 그림.jpeg"
+            alt=""
+          />
+          Piedra
+        </button>
+        <button id="paper" class="cargar" data-choice="Papel">
+          <img src="assets/descarga.jpeg" alt="" />
+          Papel
+        </button>
+        <button id="scissors" class="cargar" data-choice="Tijera">
+          <img src="assets/bob espoja 2.jpg" alt="" />
+          Tijera
+        </button>
+      </section>
+    </div>
+      <button type="button" id="reloadButton">Reiniciar</button>
+    </div>
+    <section id="marcador">
+      <p> Puntos Usuario</p>
+      <p id="puntosUsuario"></p>
+      <p> puntos Cpu </p>
+      <p id="puntosCpu"></p>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
